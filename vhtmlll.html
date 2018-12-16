@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript" src="Vue/vue.min.js"></script>
+<div id="id1">
+	<p v-html="title"></p>
+</div>
+<script type="text/javascript">
+let obj1=new Vue({
+	el: '#id1',
+	data:
+	{
+		title:'<a href="https://www.google.com">google</a>',
+	}
+});	
+</script>
+</body>
+</html>

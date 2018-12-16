@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Title</title>
+</head>
+<body>
+<script type="text/javascript" src="Vue/vue.min.js"></script>
+<div id="id">
+	<p v-once>{{title}}</p>
+	<p >{{f1()}}</p>
+</div>
+<script>
+let obj1=new Vue({
+	el: '#id',
+	data:
+	{
+		title:"JSMPJ Corporation",
+	},
+	methods:
+	{
+		f1:function()
+		{
+			this.title="JSMDJ";
+			return this.title;
+		}
+	}
+});	
+</script>
+</body>
+</html>

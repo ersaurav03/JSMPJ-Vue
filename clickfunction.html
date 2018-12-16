@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>click</title>
+</head>
+<body>
+<script type="text/javascript " src="Vue/vue.min.js"></script>
+<div id="id">
+	
+	<button v-on:click="fn">Clickon Me</button>
+	<p>{{counter}}</p>
+</div>
+<script>
+	let obj=new Vue({
+		el :'#id',
+		data:
+		{
+		counter: 0
+		},
+		methods:
+		{
+		fn:function()
+		{
+		this.counter++;
+		return counter;
+		}
+		}
+	});
+</script>
+</body>
+</html>

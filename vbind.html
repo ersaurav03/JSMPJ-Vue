@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSMPJ Corporation</title>
+</head>
+<body>
+<script type="text/javascript" src="Vue/vue.min.js"></script>
+<div id="id1">
+<a v-bind:href="link">Google.com</a>
+</div>
+<script>
+    let obj1=new Vue({
+        el: '#id1',
+        data:
+        {
+        link:"https://www.google.com",
+        }
+    });
+</script>
+</body>
+</html>

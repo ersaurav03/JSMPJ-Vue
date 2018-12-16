@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSMPJ Corporation</title>
+</head>
+<body>
+<script type="text/javascript" src="Vue/vue.min.js"></script>
+<div id="id1">
+<button v-on:click="counter++">increase</button>
+<button v-on:click="counter--">decrease</button>
+<p>counter : {{counter}}</p>
+<p>result : {{result()}}</p>
+</div>
+<script>
+    let obj1=new Vue({
+        el: '#id1',
+        data:
+        {
+         counter:0,
+        },
+        methods:
+        {
+         result()
+         {
+         return this.counter > 5 ? 'greater 5' : 'smaller 5'
+         }
+        }
+    });
+</script>
+</body>
+</html>

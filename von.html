@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Von</title>
+</head>
+<body>
+<script src="Vue/vue.min.js"></script>
+<div id="id1">
+<p v-once>{{title}}</p>
+<p>{{f1()}}</p>
+<!-- <p></p>	 -->
+</div>
+<script>
+let obj=new Vue({
+	el: '#id1',
+	data:
+	{
+    title:"JSMPJ Corporation",
+	},
+	methods:
+	{
+	f1:function()
+	{
+    this.title="JSMDJ Corporation";
+    return this.title;
+    }
+	}
+}); 
+
+
+
+</script>
+</body>
+</html>

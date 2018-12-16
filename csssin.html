@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSMPJ Corporation</title>
+<style>
+	div.demo
+	{
+	height: 100px;
+	width: 100px;
+	background-color: gray;
+	display: inline-block;
+	margin: 10px;
+	}
+	div.red
+	{
+	background-color: red;
+	}
+	div.blue
+    {
+    background-color: blue;
+    }
+    div.green
+    {
+    background-color: green;
+    }
+</style>
+</head>
+<body>
+<script type="text/javascript" src="Vue/vue.min.js"></script>
+<div id="id1">
+
+<div class="demo" @click="attachRed =! attachRed" :class="{red: attachRed}">
+</div>
+<div class="demo blue" >
+
+</div>
+<div class="demo green">
+
+</div>
+</div>
+<script>
+    let obj1=new Vue({
+        el: '#id1',
+        data:
+        {
+         attachRed:false
+        }
+    });
+</script>
+</body>
+</html>

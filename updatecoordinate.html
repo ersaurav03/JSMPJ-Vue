@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>click</title>
+</head>
+<body>
+<script type="text/javascript " src="Vue/vue.min.js"></script>
+<div id="id">
+	
+	
+	<p v-on:mousemove="coordinate">coordinate: {{x}}/{{y}}
+- <span v-on:mousemove.stop.prevent="">Dead spot</span>
+	</p>
+	<input type="text" v-on:keyup="alertMe">
+</div>
+<script>
+	let obj=new Vue({
+		el :'#id',
+		data:
+		{
+		x:0,
+		y:0,
+		},
+		methods:
+		{
+		coordinate:function(event)
+		{
+         this.x=event.clientX;
+         this.y=event.clientY;
+		},
+		alertMe:function()
+		{
+			alert('Alert');
+		}
+		}
+	});
+</script>
+</body>
+</html>

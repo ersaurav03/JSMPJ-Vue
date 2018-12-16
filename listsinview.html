@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>V-iff</title>
+</head>
+<body>
+<script src="Vue/vue.min.js" type="text/javascript"></script>
+<div id="id1">
+<ul>
+	<li v-for="(ingredient, i) in ingredients">{{ ingredient }} {{{ i }}}
+	</li>
+</ul>
+</div>
+<script>
+	let obj1=new Vue({
+		el: '#id1',
+		data:
+		{
+			ingredients:['meat', 'fruit', 'cookies'],
+			persons: [{name: 'max' , age 27, 'red'}, {name: 'Anna', age:'unknown', color:'green'}]
+		}
+	});
+</script>
+</body>
+</html>
