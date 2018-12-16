@@ -9,9 +9,6 @@
 <h1>{{title}}</h1>
 <h2>{{title1}}</h2>	
 <h3>{{title3}}</h3>
-<h1>{{f1()}}</h1>
-<h2>{{f2()}}</h2>
-<h3>{{f3()}}</h3>
 </div>
 <script>
 	let obj1=new Vue({
@@ -21,21 +18,6 @@
     title:"JSMPJ Croporation",
     title1:"JSMDJ Croporation",
     title3:"JJSMPJJ",
-    },
-    methods:
-    {
-    f1:function()
-    {
-    return this.title;
-    },
-    f2:function()
-    {
-    return this.title1;
-    },
-    f3:function()
-    {
-    	return this.title3;
-    },
     }
 	});
 </script>
