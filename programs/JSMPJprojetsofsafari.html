@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>V-iff</title>
+	<title>JSMPJ Corporation</title>
+	<link rel="stylesheet" type="text/css" href="css/vuecss.css">
+	<style type="text/css">
+
+	</style>
 </head>
 <body>
-<script src="../Vue/vue.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="Vue/vue.min.js"></script>
 <div id="id1">
 <ul>
 	<li v-for="(ingredient, i) in ingredients">{{ ingredient }} {{{ i }}}
@@ -16,8 +20,7 @@
 		el: '#id1',
 		data:
 		{
-			ingredients:['meat', 'fruit', 'cookies'],
-			persons: [{name: 'max' , age 27, 'red'}, {name: 'Anna', age:'unknown', color:'green'}]
+			
 		}
 	});
 </script>
