@@ -1,0 +1,25 @@
+		div.nav
+		{
+		height: 50px;
+		width: 100%;
+		background-color: rgba(255,155,55,0.7);
+		}
+		div.product-image
+		{
+		height: 260px;
+		width: 260px;
+
+		}
+		div.cart
+		{
+		height: 20px;
+		width: 40px;
+		background-color: rgba(255,255,255,0.7);
+		color: black;
+		}
+		div.colorBox
+		{
+		height: 40px;
+		width: 40px;
+		margin-top: 5px;	
+		}

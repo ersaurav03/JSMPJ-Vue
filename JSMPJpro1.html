@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSMPJ Corporation</title>
+	<link rel="stylesheet" type="text/css" href="css/vuecss.css">
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+<script type="text/javascript" src="Vue/vue.min.js"></script>
+
+
+<div class="nav">
+	
+</div>
+<!------Navbar----->
+
+<div id="app1">
+	<p>{{product}}</p>
+	<div class="product-image">
+	<img v-bind:src="image" alt="title">
+    </div>
+
+
+    <a v-bind:href="link">google.com</a>
+    <p v-if="inventory > 10">In Stock</p>
+    <p v-else-if="inventory <= 10 && inventory>1">Almost Sold Out</p>
+    <p v-else>All sold Stock</p>
+
+
+    <p v-if="onSale"> Onsale</p>
+    <p v-else>Not onsale</p>
+
+     <ul>
+	 <li v-for="detail in details">{{detail}}</li>
+     </ul>
+
+      <div v-for="varient in varients":key="varient.VarientId">
+	   <p>{{varient.varientColor}} {{varient.varientId}}</p>
+      </div>
+
+</div>
+
+<script>
+	var obj1=new Vue({
+		el: '#app1',
+		data:
+		{
+			product:'John Wick',
+			image:"images/1.jpeg",
+			link:"https://www.google.com",
+			inventory:0,
+			onSale:'true',
+			details:["80% cotton","20% polyster", "gender Neutral"],
+			varients: [
+			{
+				varientId:234,
+				varientColor:"green",
+			
+			},
+			{
+			varientId:235,
+			varientColor:"red"
+			}
+			           ]
+		}
+	});
+</script>
+</body>
+</html>
